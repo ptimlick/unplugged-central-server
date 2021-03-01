@@ -13,7 +13,11 @@ Data from android gathering devices can be aggregated for backup, analysis and t
     * Create one or more dummy https websites
     * Install full certificate authority chain certificate on unplugged server
     * Android phones connect through wifi server by dummy name
-    * a configuration of odk-central project released as a docker archive   
+    * a configuration of odk-central project released as a docker archive
+  * create a wireless access point using https://hub.docker.com/r/offlinehacker/docker-ap
+    * now bridges wireless clients to host connected internet
+    * configure to bridge to odk-central running on host laptop
+    * convert from run command to docker-compose extension
   * Modify odk-central to replace default internal bridge network with a named network
     * Needed for TLS Security of the wifi connection (above).  
     * Docker-compose "best practice"
